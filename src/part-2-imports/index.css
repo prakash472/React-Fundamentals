@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: antiquewhite;
+  color: #222;
+}
+
+.wrapper {
+  width: 80vw;
+  display: grid;
+  max-width: 1170px;
+  margin: 5rem auto;
+  gap: 2rem;
+  padding-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.book {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+.wrapper h3 {
+  color: red;
+}
